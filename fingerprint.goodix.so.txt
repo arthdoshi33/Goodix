@@ -3414,18 +3414,18 @@ Disassembly of section .text:
     aa70:	7100081f 	cmp	w0, #0x2
     aa74:	54000041 	b.ne	aa7c <_ZN7android10GxFpDevice6notifyEiii@@Base+0x15c>  // b.any
     aa78:	97fffeed 	bl	a62c <send_fp_untouch@@Base>
-    aa7c:	f9403ba0 	ldr	x0, [x29, #112]
-    aa80:	b40000c0 	cbz	x0, aa98 <_ZN7android10GxFpDevice6notifyEiii@@Base+0x178>
-    aa84:	f9400002 	ldr	x2, [x0]
-    aa88:	aa1803e1 	mov	x1, x24
-    aa8c:	f85e8042 	ldur	x2, [x2, #-24]
-    aa90:	8b020000 	add	x0, x0, x2
-    aa94:	97fff43f 	bl	7b90 <_ZNK7android7RefBase9decStrongEPKv@plt>
+    aa7c:	d503201f 	nop
+    aa80:	d503201f 	nop
+    aa84:	d503201f 	nop
+    aa88:	d503201f 	nop
+    aa8c:	d503201f 	nop
+    aa90:	d503201f 	nop
+    aa94:	d503201f 	nop
     aa98:	f947ce94 	ldr	x20, [x20, #3992]
-    aa9c:	f9403fa1 	ldr	x1, [x29, #120]
-    aaa0:	f9400280 	ldr	x0, [x20]
-    aaa4:	eb00003f 	cmp	x1, x0
-    aaa8:	540022e1 	b.ne	af04 <_ZN7android10GxFpDevice6notifyEiii@@Base+0x5e4>  // b.any
+    aa9c:	d503201f 	nop
+    aaa0:	d503201f 	nop
+    aaa4:	d503201f 	nop
+    aaa8:	d503201f 	nop
     aaac:	a94153f3 	ldp	x19, x20, [sp, #16]
     aab0:	a9425bf5 	ldp	x21, x22, [sp, #32]
     aab4:	a94363f7 	ldp	x23, x24, [sp, #48]
@@ -3805,18 +3805,18 @@ Disassembly of section .text:
     b084:	d2800005 	mov	x5, #0x0                   	// #0
     b088:	52800020 	mov	w0, #0x1                   	// #1
     b08c:	97fffcdb 	bl	a3f8 <send_fp_scan_on@@Base>
-    b090:	f94033a0 	ldr	x0, [x29, #96]
-    b094:	b40000c0 	cbz	x0, b0ac <_ZN7android10GxFpDevice10notifyDataEiiPc@@Base+0x1a4>
-    b098:	f9400002 	ldr	x2, [x0]
-    b09c:	aa1903e1 	mov	x1, x25
-    b0a0:	f85e8042 	ldur	x2, [x2, #-24]
-    b0a4:	8b020000 	add	x0, x0, x2
-    b0a8:	97fff2ba 	bl	7b90 <_ZNK7android7RefBase9decStrongEPKv@plt>
+    b090:	d503201f 	nop
+    b094:	d503201f 	nop
+    b098:	d503201f 	nop
+    b09c:	d503201f 	nop
+    b0a0:	d503201f 	nop
+    b0a4:	d503201f 	nop
+    b0a8:	d503201f 	nop
     b0ac:	f947ce94 	ldr	x20, [x20, #3992]
-    b0b0:	f94037a1 	ldr	x1, [x29, #104]
-    b0b4:	f9400280 	ldr	x0, [x20]
-    b0b8:	eb00003f 	cmp	x1, x0
-    b0bc:	54000981 	b.ne	b1ec <_ZN7android10GxFpDevice10notifyDataEiiPc@@Base+0x2e4>  // b.any
+    b0b0:	d503201f 	nop
+    b0b4:	d503201f 	nop
+    b0b8:	d503201f 	nop
+    b0bc:	d503201f 	nop
     b0c0:	a94153f3 	ldp	x19, x20, [sp, #16]
     b0c4:	a9425bf5 	ldp	x21, x22, [sp, #32]
     b0c8:	a94363f7 	ldp	x23, x24, [sp, #48]
@@ -4150,10 +4150,10 @@ Disassembly of section .text:
     b5a8:	52800017 	mov	w23, #0x0                   	// #0
     b5ac:	f947ce73 	ldr	x19, [x19, #3992]
     b5b0:	2a1703e0 	mov	w0, w23
-    b5b4:	f94037a2 	ldr	x2, [x29, #104]
-    b5b8:	f9400261 	ldr	x1, [x19]
-    b5bc:	eb01005f 	cmp	x2, x1
-    b5c0:	540011c1 	b.ne	b7f8 <goodix_sensor_init@@Base+0x330>  // b.any
+    b5b4:	d503201f 	nop
+    b5b8:	d503201f 	nop
+    b5bc:	d503201f 	nop
+    b5c0:	d503201f 	nop
     b5c4:	a94153f3 	ldp	x19, x20, [sp, #16]
     b5c8:	a9425bf5 	ldp	x21, x22, [sp, #32]
     b5cc:	a94363f7 	ldp	x23, x24, [sp, #48]
@@ -4187,13 +4187,13 @@ Disassembly of section .text:
     b63c:	9115a042 	add	x2, x2, #0x568
     b640:	12800017 	mov	w23, #0xffffffff            	// #-1
     b644:	97fff177 	bl	7c20 <__android_log_print@plt>
-    b648:	f9402fa0 	ldr	x0, [x29, #88]
-    b64c:	b4fffb00 	cbz	x0, b5ac <goodix_sensor_init@@Base+0xe4>
-    b650:	f9400002 	ldr	x2, [x0]
-    b654:	aa1403e1 	mov	x1, x20
-    b658:	f85e8042 	ldur	x2, [x2, #-24]
-    b65c:	8b020000 	add	x0, x0, x2
-    b660:	97fff14c 	bl	7b90 <_ZNK7android7RefBase9decStrongEPKv@plt>
+    b648:	d503201f 	nop
+    b64c:	d503201f 	nop
+    b650:	d503201f 	nop
+    b654:	d503201f 	nop
+    b658:	d503201f 	nop
+    b65c:	d503201f 	nop
+    b660:	d503201f 	nop
     b664:	17ffffd2 	b	b5ac <goodix_sensor_init@@Base+0xe4>
     b668:	900000c2 	adrp	x2, 23000 <_Unwind_Find_FDE@@Base+0x14d0>
     b66c:	aa1503e1 	mov	x1, x21
@@ -4258,33 +4258,33 @@ Disassembly of section .text:
     b758:	b94000e7 	ldr	w7, [x7]
     b75c:	b90053a7 	str	w7, [x29, #80]
     b760:	97fff0dc 	bl	7ad0 <_ZN7android2Fp9gx_gfCmdMEiPhiS1_iPi@plt>
-    b764:	f94033a0 	ldr	x0, [x29, #96]
-    b768:	b40000c0 	cbz	x0, b780 <goodix_sensor_init@@Base+0x2b8>
-    b76c:	f9400002 	ldr	x2, [x0]
-    b770:	aa1503e1 	mov	x1, x21
-    b774:	f85e8042 	ldur	x2, [x2, #-24]
-    b778:	8b020000 	add	x0, x0, x2
-    b77c:	97fff105 	bl	7b90 <_ZNK7android7RefBase9decStrongEPKv@plt>
-    b780:	f9402fa0 	ldr	x0, [x29, #88]
-    b784:	52800021 	mov	w1, #0x1                   	// #1
-    b788:	97fff146 	bl	7ca0 <_ZN7android2Fp10gx_EngTestEi@plt>
-    b78c:	f9402fa0 	ldr	x0, [x29, #88]
-    b790:	f90033a0 	str	x0, [x29, #96]
-    b794:	b40000c0 	cbz	x0, b7ac <goodix_sensor_init@@Base+0x2e4>
-    b798:	f9400002 	ldr	x2, [x0]
-    b79c:	aa1503e1 	mov	x1, x21
-    b7a0:	f85e8042 	ldur	x2, [x2, #-24]
-    b7a4:	8b020000 	add	x0, x0, x2
-    b7a8:	97fff1da 	bl	7f10 <_ZNK7android7RefBase9incStrongEPKv@plt>
+    b764:	d503201f 	nop
+    b768:	d503201f 	nop
+    b76c:	d503201f 	nop
+    b770:	d503201f 	nop
+    b774:	d503201f 	nop
+    b778:	d503201f 	nop
+    b77c:	d503201f 	nop
+    b780:	d503201f 	nop
+    b784:	d503201f 	nop
+    b788:	d503201f 	nop
+    b78c:	d503201f 	nop
+    b790:	d503201f 	nop
+    b794:	d503201f 	nop
+    b798:	d503201f 	nop
+    b79c:	d503201f 	nop
+    b7a0:	d503201f 	nop
+    b7a4:	d503201f 	nop
+    b7a8:	d503201f 	nop
     b7ac:	aa1503e0 	mov	x0, x21
     b7b0:	97ffff21 	bl	b434 <_ZTv0_n24_N7android10GxFpDeviceD0Ev@@Base+0x10>
-    b7b4:	f94033a0 	ldr	x0, [x29, #96]
-    b7b8:	b4fff480 	cbz	x0, b648 <goodix_sensor_init@@Base+0x180>
-    b7bc:	f9400002 	ldr	x2, [x0]
-    b7c0:	aa1503e1 	mov	x1, x21
-    b7c4:	f85e8042 	ldur	x2, [x2, #-24]
-    b7c8:	8b020000 	add	x0, x0, x2
-    b7cc:	97fff0f1 	bl	7b90 <_ZNK7android7RefBase9decStrongEPKv@plt>
+    b7b4:	d503201f 	nop
+    b7b8:	d503201f 	nop
+    b7bc:	d503201f 	nop
+    b7c0:	d503201f 	nop
+    b7c4:	d503201f 	nop
+    b7c8:	d503201f 	nop
+    b7cc:	d503201f 	nop
     b7d0:	17ffff9e 	b	b648 <goodix_sensor_init@@Base+0x180>
     b7d4:	d2800000 	mov	x0, #0x0                   	// #0
     b7d8:	17ffffd7 	b	b734 <goodix_sensor_init@@Base+0x26c>
@@ -4341,19 +4341,19 @@ Disassembly of section .text:
     b89c:	aa1803e1 	mov	x1, x24
     b8a0:	97fff144 	bl	7db0 <_ZN7android2Fp18gx_load_all_fpdataEPv@plt>
     b8a4:	2a0003f4 	mov	w20, w0
-    b8a8:	f94023a0 	ldr	x0, [x29, #64]
-    b8ac:	b40000c0 	cbz	x0, b8c4 <load_all_fpdata@@Base+0xb8>
-    b8b0:	f9400002 	ldr	x2, [x0]
-    b8b4:	aa1603e1 	mov	x1, x22
-    b8b8:	f85e8042 	ldur	x2, [x2, #-24]
-    b8bc:	8b020000 	add	x0, x0, x2
-    b8c0:	97fff0b4 	bl	7b90 <_ZNK7android7RefBase9decStrongEPKv@plt>
+    b8a8:	d503201f 	nop
+    b8ac:	d503201f 	nop
+    b8b0:	d503201f 	nop
+    b8b4:	d503201f 	nop
+    b8b8:	d503201f 	nop
+    b8bc:	d503201f 	nop
+    b8c0:	d503201f 	nop
     b8c4:	f947ce73 	ldr	x19, [x19, #3992]
     b8c8:	2a1403e0 	mov	w0, w20
-    b8cc:	f94027a2 	ldr	x2, [x29, #72]
-    b8d0:	f9400261 	ldr	x1, [x19]
-    b8d4:	eb01005f 	cmp	x2, x1
-    b8d8:	540001e1 	b.ne	b914 <load_all_fpdata@@Base+0x108>  // b.any
+    b8cc:	d503201f 	nop
+    b8d0:	d503201f 	nop
+    b8d4:	d503201f 	nop
+    b8d8:	d503201f 	nop
     b8dc:	a94153f3 	ldp	x19, x20, [sp, #16]
     b8e0:	a9425bf5 	ldp	x21, x22, [sp, #32]
     b8e4:	a94363f7 	ldp	x23, x24, [sp, #48]
@@ -4403,19 +4403,19 @@ Disassembly of section .text:
     b98c:	aa1703e1 	mov	x1, x23
     b990:	97fff08c 	bl	7bc0 <_ZN7android2Fp14gx_set_user_idEm@plt>
     b994:	2a0003f4 	mov	w20, w0
-    b998:	f94023a0 	ldr	x0, [x29, #64]
-    b99c:	b40000c0 	cbz	x0, b9b4 <goodix_sensor_fp_set_user_id@@Base+0x9c>
-    b9a0:	f9400002 	ldr	x2, [x0]
-    b9a4:	aa1603e1 	mov	x1, x22
-    b9a8:	f85e8042 	ldur	x2, [x2, #-24]
-    b9ac:	8b020000 	add	x0, x0, x2
-    b9b0:	97fff078 	bl	7b90 <_ZNK7android7RefBase9decStrongEPKv@plt>
+    b998:	d503201f 	nop
+    b99c:	d503201f 	nop
+    b9a0:	d503201f 	nop
+    b9a4:	d503201f 	nop
+    b9a8:	d503201f 	nop
+    b9ac:	d503201f 	nop
+    b9b0:	d503201f 	nop
     b9b4:	f947ce73 	ldr	x19, [x19, #3992]
     b9b8:	2a1403e0 	mov	w0, w20
-    b9bc:	f94027a2 	ldr	x2, [x29, #72]
-    b9c0:	f9400261 	ldr	x1, [x19]
-    b9c4:	eb01005f 	cmp	x2, x1
-    b9c8:	540001c1 	b.ne	ba00 <goodix_sensor_fp_set_user_id@@Base+0xe8>  // b.any
+    b9bc:	d503201f 	nop
+    b9c0:	d503201f 	nop
+    b9c4:	d503201f 	nop
+    b9c8:	d503201f 	nop
     b9cc:	a94153f3 	ldp	x19, x20, [sp, #16]
     b9d0:	a9425bf5 	ldp	x21, x22, [sp, #32]
     b9d4:	f9401bf7 	ldr	x23, [sp, #48]
@@ -4519,10 +4519,10 @@ Disassembly of section .text:
     bb4c:	34000180 	cbz	w0, bb7c <goodix_sensor_set_active_group@@Base+0x6c>
     bb50:	f947ce73 	ldr	x19, [x19, #3992]
     bb54:	2a1403e0 	mov	w0, w20
-    bb58:	f9402fa2 	ldr	x2, [x29, #88]
-    bb5c:	f9400261 	ldr	x1, [x19]
-    bb60:	eb01005f 	cmp	x2, x1
-    bb64:	54000d41 	b.ne	bd0c <goodix_sensor_set_active_group@@Base+0x1fc>  // b.any
+    bb58:	d503201f 	nop
+    bb5c:	d503201f 	nop
+    bb60:	d503201f 	nop
+    bb64:	d503201f 	nop
     bb68:	a94153f3 	ldp	x19, x20, [sp, #16]
     bb6c:	a9425bf5 	ldp	x21, x22, [sp, #32]
     bb70:	a94363f7 	ldp	x23, x24, [sp, #48]
@@ -4570,39 +4570,39 @@ Disassembly of section .text:
     bc18:	b94000e7 	ldr	w7, [x7]
     bc1c:	b90043a7 	str	w7, [x29, #64]
     bc20:	97ffefac 	bl	7ad0 <_ZN7android2Fp9gx_gfCmdMEiPhiS1_iPi@plt>
-    bc24:	f9402ba0 	ldr	x0, [x29, #80]
-    bc28:	b40000c0 	cbz	x0, bc40 <goodix_sensor_set_active_group@@Base+0x130>
-    bc2c:	f9400002 	ldr	x2, [x0]
-    bc30:	aa1503e1 	mov	x1, x21
-    bc34:	f85e8042 	ldur	x2, [x2, #-24]
-    bc38:	8b020000 	add	x0, x0, x2
-    bc3c:	97ffefd5 	bl	7b90 <_ZNK7android7RefBase9decStrongEPKv@plt>
+    bc24:	d503201f 	nop
+    bc28:	d503201f 	nop
+    bc2c:	d503201f 	nop
+    bc30:	d503201f 	nop
+    bc34:	d503201f 	nop
+    bc38:	d503201f 	nop
+    bc3c:	d503201f 	nop
     bc40:	aa1603e0 	mov	x0, x22
     bc44:	97fff5df 	bl	93c0 <loadFingerPrintPlatformDataIfNeed@@Base>
-    bc48:	f94027a0 	ldr	x0, [x29, #72]
-    bc4c:	f9002ba0 	str	x0, [x29, #80]
-    bc50:	b40000c0 	cbz	x0, bc68 <goodix_sensor_set_active_group@@Base+0x158>
-    bc54:	f9400002 	ldr	x2, [x0]
-    bc58:	aa1503e1 	mov	x1, x21
-    bc5c:	f85e8042 	ldur	x2, [x2, #-24]
-    bc60:	8b020000 	add	x0, x0, x2
-    bc64:	97fff0ab 	bl	7f10 <_ZNK7android7RefBase9incStrongEPKv@plt>
+    bc48:	d503201f 	nop
+    bc4c:	d503201f 	nop
+    bc50:	d503201f 	nop
+    bc54:	d503201f 	nop
+    bc58:	d503201f 	nop
+    bc5c:	d503201f 	nop
+    bc60:	d503201f 	nop
+    bc64:	d503201f 	nop
     bc68:	aa1503e0 	mov	x0, x21
     bc6c:	97fffdf2 	bl	b434 <_ZTv0_n24_N7android10GxFpDeviceD0Ev@@Base+0x10>
-    bc70:	f9402ba0 	ldr	x0, [x29, #80]
-    bc74:	b40000c0 	cbz	x0, bc8c <goodix_sensor_set_active_group@@Base+0x17c>
-    bc78:	f9400002 	ldr	x2, [x0]
-    bc7c:	aa1503e1 	mov	x1, x21
-    bc80:	f85e8042 	ldur	x2, [x2, #-24]
-    bc84:	8b020000 	add	x0, x0, x2
-    bc88:	97ffefc2 	bl	7b90 <_ZNK7android7RefBase9decStrongEPKv@plt>
-    bc8c:	f94027a0 	ldr	x0, [x29, #72]
-    bc90:	b4fff600 	cbz	x0, bb50 <goodix_sensor_set_active_group@@Base+0x40>
-    bc94:	f9400002 	ldr	x2, [x0]
-    bc98:	aa1703e1 	mov	x1, x23
-    bc9c:	f85e8042 	ldur	x2, [x2, #-24]
-    bca0:	8b020000 	add	x0, x0, x2
-    bca4:	97ffefbb 	bl	7b90 <_ZNK7android7RefBase9decStrongEPKv@plt>
+    bc70:	d503201f 	nop
+    bc74:	d503201f 	nop
+    bc78:	d503201f 	nop
+    bc7c:	d503201f 	nop
+    bc80:	d503201f 	nop
+    bc84:	d503201f 	nop
+    bc88:	d503201f 	nop
+    bc8c:	d503201f 	nop
+    bc90:	d503201f 	nop
+    bc94:	d503201f 	nop
+    bc98:	d503201f 	nop
+    bc9c:	d503201f 	nop
+    bca0:	d503201f 	nop
+    bca4:	d503201f 	nop
     bca8:	17ffffaa 	b	bb50 <goodix_sensor_set_active_group@@Base+0x40>
     bcac:	d00000a1 	adrp	x1, 21000 <_Unwind_Backtrace@@Base+0xc40>
     bcb0:	900000c2 	adrp	x2, 23000 <_Unwind_Find_FDE@@Base+0x14d0>
@@ -4877,17 +4877,17 @@ Disassembly of section .text:
     c0cc:	b9410c21 	ldr	w1, [x1, #268]
     c0d0:	35000241 	cbnz	w1, c118 <goodix_sensor_fp_enroll@@Base+0xf0>
     c0d4:	12800054 	mov	w20, #0xfffffffd            	// #-3
-    c0d8:	f9400002 	ldr	x2, [x0]
-    c0dc:	aa1803e1 	mov	x1, x24
-    c0e0:	f85e8042 	ldur	x2, [x2, #-24]
-    c0e4:	8b020000 	add	x0, x0, x2
-    c0e8:	97ffeeaa 	bl	7b90 <_ZNK7android7RefBase9decStrongEPKv@plt>
+    c0d8:	d503201f 	nop
+    c0dc:	d503201f 	nop
+    c0e0:	d503201f 	nop
+    c0e4:	d503201f 	nop
+    c0e8:	d503201f 	nop
     c0ec:	f947ce73 	ldr	x19, [x19, #3992]
     c0f0:	2a1403e0 	mov	w0, w20
-    c0f4:	f9402fa2 	ldr	x2, [x29, #88]
-    c0f8:	f9400261 	ldr	x1, [x19]
-    c0fc:	eb01005f 	cmp	x2, x1
-    c100:	540004a1 	b.ne	c194 <goodix_sensor_fp_enroll@@Base+0x16c>  // b.any
+    c0f4:	d503201f 	nop
+    c0f8:	d503201f 	nop
+    c0fc:	d503201f 	nop
+    c100:	d503201f 	nop
     c104:	a94153f3 	ldp	x19, x20, [sp, #16]
     c108:	a9425bf5 	ldp	x21, x22, [sp, #32]
     c10c:	a94363f7 	ldp	x23, x24, [sp, #48]
@@ -4912,8 +4912,8 @@ Disassembly of section .text:
     c158:	f94027a0 	ldr	x0, [x29, #72]
     c15c:	97ffeecd 	bl	7c90 <_ZN7android2Fp11gx_RegisterEv@plt>
     c160:	2a0003f4 	mov	w20, w0
-    c164:	f94027a0 	ldr	x0, [x29, #72]
-    c168:	b4fffc20 	cbz	x0, c0ec <goodix_sensor_fp_enroll@@Base+0xc4>
+    c164:	d503201f 	nop
+    c168:	d503201f 	nop
     c16c:	17ffffdb 	b	c0d8 <goodix_sensor_fp_enroll@@Base+0xb0>
     c170:	f00000a2 	adrp	x2, 23000 <_Unwind_Find_FDE@@Base+0x14d0>
     c174:	913582c1 	add	x1, x22, #0xd60
@@ -5101,17 +5101,17 @@ Disassembly of section .text:
     c434:	b9410c21 	ldr	w1, [x1, #268]
     c438:	35000241 	cbnz	w1, c480 <goodix_sensor_fp_match@@Base+0xe4>
     c43c:	12800054 	mov	w20, #0xfffffffd            	// #-3
-    c440:	f9400002 	ldr	x2, [x0]
-    c444:	aa1703e1 	mov	x1, x23
-    c448:	f85e8042 	ldur	x2, [x2, #-24]
-    c44c:	8b020000 	add	x0, x0, x2
-    c450:	97ffedd0 	bl	7b90 <_ZNK7android7RefBase9decStrongEPKv@plt>
+    c440:	d503201f 	nop
+    c444:	d503201f 	nop
+    c448:	d503201f 	nop
+    c44c:	d503201f 	nop
+    c450:	d503201f 	nop
     c454:	f947ce73 	ldr	x19, [x19, #3992]
     c458:	2a1403e0 	mov	w0, w20
-    c45c:	f9402fa2 	ldr	x2, [x29, #88]
-    c460:	f9400261 	ldr	x1, [x19]
-    c464:	eb01005f 	cmp	x2, x1
-    c468:	540004c1 	b.ne	c500 <goodix_sensor_fp_match@@Base+0x164>  // b.any
+    c45c:	d503201f 	nop
+    c460:	d503201f 	nop
+    c464:	d503201f 	nop
+    c468:	d503201f 	nop
     c46c:	a94153f3 	ldp	x19, x20, [sp, #16]
     c470:	a9425bf5 	ldp	x21, x22, [sp, #32]
     c474:	a94363f7 	ldp	x23, x24, [sp, #48]
@@ -5137,8 +5137,8 @@ Disassembly of section .text:
     c4c4:	aa1603e1 	mov	x1, x22
     c4c8:	97ffed22 	bl	7950 <_ZN7android2Fp8gx_MatchEPv@plt>
     c4cc:	2a0003f4 	mov	w20, w0
-    c4d0:	f94027a0 	ldr	x0, [x29, #72]
-    c4d4:	b4fffc00 	cbz	x0, c454 <goodix_sensor_fp_match@@Base+0xb8>
+    c4d0:	d503201f 	nop
+    c4d4:	d503201f 	nop
     c4d8:	17ffffda 	b	c440 <goodix_sensor_fp_match@@Base+0xa4>
     c4dc:	f00000a2 	adrp	x2, 23000 <_Unwind_Find_FDE@@Base+0x14d0>
     c4e0:	91358301 	add	x1, x24, #0xd60
@@ -5192,20 +5192,20 @@ Disassembly of section .text:
     c598:	54000300 	b.eq	c5f8 <goodix_sensor_fp_cancel@@Base+0xf4>  // b.none
     c59c:	71000aff 	cmp	w23, #0x2
     c5a0:	54000320 	b.eq	c604 <goodix_sensor_fp_cancel@@Base+0x100>  // b.none
-    c5a4:	f94023a0 	ldr	x0, [x29, #64]
-    c5a8:	52800014 	mov	w20, #0x0                   	// #0
-    c5ac:	b40000c0 	cbz	x0, c5c4 <goodix_sensor_fp_cancel@@Base+0xc0>
-    c5b0:	f9400002 	ldr	x2, [x0]
-    c5b4:	aa1603e1 	mov	x1, x22
-    c5b8:	f85e8042 	ldur	x2, [x2, #-24]
-    c5bc:	8b020000 	add	x0, x0, x2
-    c5c0:	97ffed74 	bl	7b90 <_ZNK7android7RefBase9decStrongEPKv@plt>
+    c5a4:	d503201f 	nop
+    c5a8:	d503201f 	nop
+    c5ac:	d503201f 	nop
+    c5b0:	d503201f 	nop
+    c5b4:	d503201f 	nop
+    c5b8:	d503201f 	nop
+    c5bc:	d503201f 	nop
+    c5c0:	d503201f 	nop
     c5c4:	f947ce73 	ldr	x19, [x19, #3992]
     c5c8:	2a1403e0 	mov	w0, w20
-    c5cc:	f94027a2 	ldr	x2, [x29, #72]
-    c5d0:	f9400261 	ldr	x1, [x19]
-    c5d4:	eb01005f 	cmp	x2, x1
-    c5d8:	540001c1 	b.ne	c610 <goodix_sensor_fp_cancel@@Base+0x10c>  // b.any
+    c5cc:	d503201f 	nop
+    c5d0:	d503201f 	nop
+    c5d4:	d503201f 	nop
+    c5d8:	d503201f 	nop
     c5dc:	a94153f3 	ldp	x19, x20, [sp, #16]
     c5e0:	a9425bf5 	ldp	x21, x22, [sp, #32]
     c5e4:	f9401bf7 	ldr	x23, [sp, #48]
@@ -5450,13 +5450,13 @@ Disassembly of section .text:
     c988:	911d6042 	add	x2, x2, #0x758
     c98c:	2a1a03e3 	mov	w3, w26
     c990:	97ffeca4 	bl	7c20 <__android_log_print@plt>
-    c994:	f9403fa0 	ldr	x0, [x29, #120]
-    c998:	b40000c0 	cbz	x0, c9b0 <goodix_sensor_fp_remove@@Base+0x18c>
-    c99c:	f9400002 	ldr	x2, [x0]
-    c9a0:	f94037a1 	ldr	x1, [x29, #104]
-    c9a4:	f85e8042 	ldur	x2, [x2, #-24]
-    c9a8:	8b020000 	add	x0, x0, x2
-    c9ac:	97ffec79 	bl	7b90 <_ZNK7android7RefBase9decStrongEPKv@plt>
+    c994:	d503201f 	nop
+    c998:	d503201f 	nop
+    c99c:	d503201f 	nop
+    c9a0:	d503201f 	nop
+    c9a4:	d503201f 	nop
+    c9a8:	d503201f 	nop
+    c9ac:	d503201f 	nop
     c9b0:	f947da94 	ldr	x20, [x20, #4016]
     c9b4:	52820021 	mov	w1, #0x1001                	// #4097
     c9b8:	52800002 	mov	w2, #0x0                   	// #0
@@ -5467,8 +5467,8 @@ Disassembly of section .text:
     c9cc:	f9400084 	ldr	x4, [x4]
     c9d0:	f9400084 	ldr	x4, [x4]
     c9d4:	d63f0080 	blr	x4
-    c9d8:	f9403ba0 	ldr	x0, [x29, #112]
-    c9dc:	b5000060 	cbnz	x0, c9e8 <goodix_sensor_fp_remove@@Base+0x1c4>
+    c9d8:	d503201f 	nop
+    c9dc:	d503201f 	nop
     c9e0:	14000007 	b	c9fc <goodix_sensor_fp_remove@@Base+0x1d8>
     c9e4:	12800054 	mov	w20, #0xfffffffd            	// #-3
     c9e8:	f9400002 	ldr	x2, [x0]
@@ -5478,10 +5478,10 @@ Disassembly of section .text:
     c9f8:	97ffec66 	bl	7b90 <_ZNK7android7RefBase9decStrongEPKv@plt>
     c9fc:	f947ce73 	ldr	x19, [x19, #3992]
     ca00:	2a1403e0 	mov	w0, w20
-    ca04:	f9404fa2 	ldr	x2, [x29, #152]
-    ca08:	f9400261 	ldr	x1, [x19]
-    ca0c:	eb01005f 	cmp	x2, x1
-    ca10:	540003e1 	b.ne	ca8c <goodix_sensor_fp_remove@@Base+0x268>  // b.any
+    ca04:	d503201f 	nop
+    ca08:	d503201f 	nop
+    ca0c:	d503201f 	nop
+    ca10:	d503201f 	nop
     ca14:	a94153f3 	ldp	x19, x20, [sp, #16]
     ca18:	a9425bf5 	ldp	x21, x22, [sp, #32]
     ca1c:	a94363f7 	ldp	x23, x24, [sp, #48]
@@ -6514,7 +6514,7 @@ Disassembly of section .text:
     d9a0:	f940afa2 	ldr	x2, [x29, #344]
     d9a4:	f9400361 	ldr	x1, [x27]
     d9a8:	eb01005f 	cmp	x2, x1
-    d9ac:	540003e1 	b.ne	da28 <_Z20getFrameworkFingerIDPii@@Base+0x2a0>  // b.any
+    d9ac:	d503201f 	nop
     d9b0:	a94153f3 	ldp	x19, x20, [sp, #16]
     d9b4:	a9425bf5 	ldp	x21, x22, [sp, #32]
     d9b8:	a94363f7 	ldp	x23, x24, [sp, #48]
@@ -6663,7 +6663,7 @@ Disassembly of section .text:
     dbec:	f940bfa2 	ldr	x2, [x29, #376]
     dbf0:	f9400301 	ldr	x1, [x24]
     dbf4:	eb01005f 	cmp	x2, x1
-    dbf8:	54000521 	b.ne	dc9c <_Z26removeSettingFingerprintIdii@@Base+0x270>  // b.any
+    dbf8:	d503201f 	nop
     dbfc:	a94153f3 	ldp	x19, x20, [sp, #16]
     dc00:	a9425bf5 	ldp	x21, x22, [sp, #32]
     dc04:	a94363f7 	ldp	x23, x24, [sp, #48]
